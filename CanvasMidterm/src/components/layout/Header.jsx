@@ -7,11 +7,11 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 const StyledAppBar = styled(AppBar)`
    && {
-      background-color: #8fbc8f;
+      background-color: ${({ theme }) => theme.colors.primary};
    }
 `;
 
-const Header = ({ toggleDrawer }) => {
+const Header = ({ toggleSidebar }) => {
    return (
       <StyledAppBar position="static">
          <Toolbar>
@@ -19,8 +19,8 @@ const Header = ({ toggleDrawer }) => {
                size="large"
                edge="start"
                color="inherit"
-               aria-label="menu"
-               onClick={toggleDrawer(true)}
+               aria-label="open menu"
+               onClick={toggleSidebar(true)}
             >
                <MenuIcon />
             </IconButton>

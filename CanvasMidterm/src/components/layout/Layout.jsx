@@ -9,22 +9,22 @@ const MainContent = styled.main`
 `;
 
 const Layout = () => {
-   const [drawerOpen, setDrawerOpen] = useState(false);
+   const [sidebarOpen, setSidebarOpen] = useState(false);
 
-   const toggleDrawer = (open) => (event) => {
+   const toggleSidebar = (open) => (event) => {
       if (
          event.type === "keydown" &&
          (event.key === "Tab" || event.key === "Shift")
       ) {
          return;
       }
-      setDrawerOpen(open);
+      setSidebarOpen(open);
    };
 
    return (
       <>
-         <Header toggleDrawer={toggleDrawer} />
-         <Navbar open={drawerOpen} toggleDrawer={toggleDrawer} />
+         <Header toggleSidebar={toggleSidebar} />
+         <Navbar open={sidebarOpen} toggleSidebar={toggleSidebar} />
          <MainContent>
             <Outlet />
          </MainContent>

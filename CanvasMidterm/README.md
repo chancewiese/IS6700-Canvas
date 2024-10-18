@@ -1,8 +1,21 @@
-# React + Vite
+# IS 6700 Midterm
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Hooks
 
-Currently, two official plugins are available:
+### useAuth
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The `useAuth` hook provides authentication functionality throughout the application. It allows components to access the current user's information and perform login, logout, and registration operations.
+
+### useApi
+
+The `useApi` hook provides a simple interface for interacting with the application's API (simulated using local storage in this implementation). It allows components to perform CRUD operations on different data types.
+
+## Contexts
+
+### AuthContext
+
+The `AuthContext` provides authentication state and methods to the entire application. It manages the current user's information and handles login, logout, and registration processes.
+
+### ThemeContext
+
+The `ThemeContext` manages the application's theme, allowing for easy switching between light and dark modes. It provides theme-related values and a toggle function to switch between modes.
