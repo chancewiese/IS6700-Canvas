@@ -1,5 +1,9 @@
 # IS 6700 Midterm
 
+### GitHub Link
+
+https://github.com/chancewiese/IS6700-Canvas.git
+
 ## Hooks
 
 ### useAuth
